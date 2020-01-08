@@ -1,0 +1,86 @@
+{
+    "version": 1578490847226,
+    "name": "css",
+    "data": [
+        {
+            "column": [
+                {
+                    "title": "selector",
+                    "barcolor": "#f39",
+                    "fold": true,
+                    "box": [
+                        {
+                            "title": "sub title",
+                            "fold": true,
+                            "list": [
+                                {
+                                    "prefix": "cls.",
+                                    "tag": "staticfoo",
+                                    "suffix": "",
+                                    "desc": "description",
+                                    "url": "",
+                                    "summary": "# title \n *italic*\n **bold**\n ***italic && bold***\n ~~strikethrough~~\n __underline_\n ",
+                                    "reference": "",
+                                    "dot": "red"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "sub title",
+                            "list": [
+                                {
+                                    "prefix": "",
+                                    "tag": "foo",
+                                    "suffix": "(args)",
+                                    "desc": "",
+                                    "url": "",
+                                    "summary": "[Link](http://url)\n\n![alt](../img/logo.png =100x100)\n",
+                                    "reference": "",
+                                    "dot": "#66d9ef"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "selector",
+                    "barcolor": "",
+                    "fold": false,
+                    "box": [
+                        {
+                            "title": "sub title",
+                            "fold": true,
+                            "list": [
+                                {
+                                    "prefix": "ins.",
+                                    "tag": "foo",
+                                    "suffix": "(arg)",
+                                    "desc": "",
+                                    "url": "",
+                                    "summary": "> quoteblock\n\n----\ntodolist \n - [x] This task is done \n - [ ] This is still pending\n\n----\ntable\nth|th|th\n---|:--:|---:\ntd|td|td\ntd|td|td\n\n----\n- ul\n    * li\n    * li\n    * li\n\n----\n\n1. ol\n    1. li\n    2. li\n    3. li",
+                                    "reference": "",
+                                    "dot": "#a6e22e"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "sub title",
+                            "list": [
+                                {
+                                    "prefix": "ins.",
+                                    "tag": "foo",
+                                    "suffix": "(args)",
+                                    "desc": "",
+                                    "url": "",
+                                    "summary": "`code in line`\n\n```javascript\nfunction hello() {\n    console.log('code block')\n}\n```",
+                                    "reference": "reference|www.api-book.com|some description..",
+                                    "dot": "#ffa500"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

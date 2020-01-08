@@ -1,0 +1,83 @@
+{
+    "meta":{
+        "title":"Api-Book",
+        "keywords":"api-book,api,notebook,vue",
+        "description":"Build your personal api-book easily"
+    },
+    "header":{
+        "title":"Api-Book",
+        "repository":"https://github.com/api-book/api-book"
+    },
+    "menu":[
+        {
+            "name":"FrontEnd",
+            "groupname":"fe"
+        },
+        {
+            "name":"BackEnd",
+            "groupname":"be"
+        },
+        {
+            "name":"Github",
+            "url":"https://github.com/api-book"
+        }
+    ],
+    "nav":[
+        {
+            "name":"CSS",
+            "path":"/",
+            "title":"",
+            "devonly":false,
+            "group":"fe"
+        },
+        {
+            "name":"JS",
+            "path":"/js",
+            "title":"",
+            "devonly":false,
+            "group":"fe"
+        },
+        {
+            "name":"Node",
+            "path":"/node",
+            "title":"",
+            "devonly":false,
+            "group":"be"
+        },
+        {
+            "name":"Database",
+            "path":"/db",
+            "title":"",
+            "devonly":true,
+            "group":"be"
+        },
+        {
+            "name":"Linux",
+            "path":"/linux",
+            "title":"",
+            "devonly":true,
+            "group":"be"
+        }
+    ],
+    "footer":{
+        "social":{
+            "email":{
+                "title":"Email to u",
+                "url":"your email"
+            },
+            "twitter":{
+                "title":"Your twitter",
+                "url":"your twitter"
+            },
+            "weibo":{
+                "title":"Your weibo",
+                "url":"your weibo"
+            }
+        },
+        "copyright":{
+            "time" : "2020",
+            "site" : "api-book.com",
+            "url" : "https://api-book.com"
+        }
+    }
+}
