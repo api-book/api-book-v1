@@ -1,17 +1,11 @@
 <template>
     <footer class="c-footer">
-        <img
-            :class="{ active: QRstatus }"
-            class="c-footer-qrcode"
-            src="/img/qrcode.jpg"
-        />
         <p class="c-footer-links">
             <a
                 v-for="(info, key) in social"
                 :href="info.url"
                 :title="info.title"
                 target="_blank"
-                @click="showQRcode(key, $event)"
                 :key="key"
             >
                 <i :class="'u-icon u-icon-' + key"></i>
@@ -30,17 +24,8 @@ export default {
     data: function() {
         return {
             social: this.$root.setting.footer.social,
-            copyright: this.$root.setting.footer.copyright,
-            QRstatus: false
+            copyright: this.$root.setting.footer.copyright
         };
-    },
-    methods: {
-        showQRcode: function(key, e) {
-            if (key == "wechat") {
-                e.preventDefault();
-                this.QRstatus = !this.QRstatus;
-            }
-        }
     }
 };
 </script>
@@ -56,21 +41,6 @@ export default {
     padding-top: 20px;
     padding-bottom: 25px;
     font-size: 12px;
-}
-.c-footer-qrcode {
-    position: absolute;
-    left: 0;
-    bottom: 100%;
-    width: 180px;
-    margin: 0 30px 10px 30px;
-    border: 1px solid #eee;
-    border-radius: 4px;
-
-    transform: translateX(-150%);
-    transition:0.2s ease-in-out;
-    &.active {
-        transform: translateX(0);
-    }
 }
 .c-footer-copyright {
     a {
