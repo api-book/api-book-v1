@@ -16,7 +16,7 @@ export default {
 <style lang="less">
 @import "../assets/css/var.less";
 .c-mask {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
