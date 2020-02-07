@@ -50,6 +50,9 @@ export default {
             deep: true,
         }
     },
+    mounted : function (){
+        this.localGroup(this.$route.name)
+    },
     methods: {
         initDB : function (){
 
@@ -90,6 +93,16 @@ export default {
                 console.warn(err);
             });
         },
+        localGroup : function (routename){
+            let originNav = this.$store.state.navs
+            for (let i=0;i<originNav.length;i++){
+                let _tempNavItem = this.$store.state.navs[i]
+                if(_tempNavItem.name.toLowerCase() == routename){
+                    this.$store.commit('changeGroup',_tempNavItem.group)
+                    break;
+                }
+            }
+        }
     },
     components: {
         Tooltip,

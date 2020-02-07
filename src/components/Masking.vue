@@ -7,7 +7,7 @@ export default {
     name: "Masking",
     computed: {
         isShow: function() {
-            return this.$store.getters.focus()
+            return this.$store.getters.focus
         }
     }
 };

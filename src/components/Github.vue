@@ -37,6 +37,7 @@ export default {
     border-radius: 3px;
 
     i {
+        //display:inline-block;
         float: left;
         width: 20px;
         height: 20px;

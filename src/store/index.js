@@ -4,19 +4,34 @@ import Setting from "../../public/setting.json";
 
 Vue.use(Vuex);
 
+let navTree = {};
+Setting.menu.forEach(function(menu, i) {
+    if (menu.groupname) {
+        navTree[menu.groupname] = [];
+    }
+});
+
+Setting.nav.forEach(function(nav, i) {
+    navTree[nav.group].push(nav);
+});
+
 let store = {
     state: {
-        isDev: (location.hostname == "localhost" || location.hostname == "127.0.0.1") ? true : false,
+        isDev:
+            location.hostname == "localhost" || location.hostname == "127.0.0.1"
+                ? true
+                : false,
         isEditMode: false,
         fullscreen: false,
         //Navigation
         menu: Setting.menu,
-        nav: Setting.nav,
-        group: Setting.menu[0]["groupname"] || "",
-        currentGroup:Setting.menu[0]['name'],
+        currentGroup: Setting.menu[0]["groupname"],
+        navs : Setting.nav,
+        navTree : navTree,
+        //Btn
         btnGroupShow: false,
         sideNavShow: false,
-        topMenuShow : false,
+        topMenuShow: false,
         //Data
         data: {},
         current: {
@@ -60,7 +75,7 @@ let store = {
             state.mask = false;
         },
         changeGroup: function(state, g) {
-            state.group = g;
+            state.currentGroup = g;
         },
         dialogOpen: function(state) {
             state.dialog = true;
@@ -169,11 +184,19 @@ let store = {
         }
     },
     getters: {
-        focus: state => () => {
-            return state.sideNavShow || state.btnGroupShow || state.topMenuShow || state.dialog;
+        nav: state => {
+            return navTree[state.currentGroup];
         },
-        screenWidth : state =>()=>{
-            return window.innerWidth
+        focus: state => {
+            return (
+                state.sideNavShow ||
+                state.btnGroupShow ||
+                state.topMenuShow ||
+                state.dialog
+            );
+        },
+        screenWidth: state => {
+            return window.innerWidth;
         },
         getDB: state => name => {
             return state.data[name];

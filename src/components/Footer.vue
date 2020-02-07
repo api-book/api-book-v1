@@ -1,5 +1,10 @@
 <template>
     <footer class="c-footer">
+        <img
+            :class="{ active: QRstatus }"
+            class="c-footer-qrcode"
+            src="/img/qrcode.jpg"
+        />
         <p class="c-footer-links">
             <a
                 v-for="(info, key) in social"
