@@ -6,7 +6,7 @@
     },
     "header":{
         "title":"Api-Book",
-        "repository":"https://github.com/api-book/api-book"
+        "repository":"https://api-book.com"
     },
     "menu":[
         {
@@ -19,7 +19,7 @@
         },
         {
             "name":"Github",
-            "url":"https://github.com/api-book"
+            "url":"https://api-book.com"
         }
     ],
     "nav":[

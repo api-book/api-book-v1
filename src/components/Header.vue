@@ -145,31 +145,14 @@ export default {
     padding: 0;
 
     .u-logo {
-        width: 68px;
-        height: 68px;
+        width: 48px;
+        height: 100%;
         float: left;
         display: block;
-        background: url(/img/logo.png) no-repeat center center;
-        background-size: contain;
-        margin-top: -(68px - 38px) / 2;
+        background: url(../../public/img/logo-white.png) no-repeat center center;
+        background-size: auto 90%;
         margin-left: 5px;
         margin-right: 8px;
-    }
-
-    @keyframes rotateLogo {
-        from {
-            transform: rotate(0);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    overflow: hidden;
-    &:hover {
-        .u-logo {
-            animation: rotateLogo 8s linear infinite;
-        }
     }
 
     .u-title {
