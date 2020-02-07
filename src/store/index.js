@@ -90,9 +90,11 @@ let store = {
         },
         dialogOpen: function(state) {
             state.dialog = true;
+            document.getElementById('api-book').classList.add('isFixed')
         },
         dialogClose: function(state) {
             state.dialog = false;
+            document.getElementById('api-book').classList.remove('isFixed')
         },
         tipIn: function(state, v) {
             state.tooltip = v;
