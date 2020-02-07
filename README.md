@@ -1,7 +1,7 @@
 # api-book
 一个简易的纯前端api笔记本，默认使用浏览器IndexedDB作为临时数据库，通过导出为json作为静态存档。  
 可基于vuex接入任何你喜欢的后端服务。  
-【Demo】 http://iruxu.com/notebook 
+【Demo】 https://iruxu.com/notebook 
 
 ## 安装
 1. 确保你已安装[node.js](https://nodejs.org/en/)
@@ -15,13 +15,13 @@ npm install
 ## 本地运行
 默认将在localhost:8083打开本地服务。
 ```
-npx vue-cli-service serve
+npm run serve
 ```
 
 ## 编译打包
 默认将输出在```docs```目录下，可在GitHub Pages中设置其作为主页。
 ```
-npx vue-cli-service build
+npm run build
 ```
 
 ## 配置说明
