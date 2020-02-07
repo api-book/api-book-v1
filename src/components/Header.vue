@@ -11,7 +11,7 @@
                 class="u-handler u-handler-center"
                 @click="showMenu"
                 :class="{ active: $store.state.topMenuShow }"
-                >{{ $store.state.currentGroup }}</i
+                >{{ $store.getters.groupname }}</i
             >
             <i class="u-handler u-handler-right" @click="showBtnGroup"></i>
             <div

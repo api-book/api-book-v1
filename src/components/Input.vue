@@ -301,7 +301,7 @@ export default {
     }
 
     position: fixed;
-    z-index: 201;
+    z-index: @mobile-dialog;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -456,13 +456,14 @@ export default {
 }
 
 .fullscreen(){
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     left: 0;
     top: 0;
     transform: translate(0);
     box-sizing: border-box;
     overflow: auto;
+    border-radius:0;
 }
 .c-input.fullscreen{
     .fullscreen();

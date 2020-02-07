@@ -200,6 +200,9 @@ let store = {
         nav: state => {
             return navTree[state.currentGroup];
         },
+        groupname : state => {
+            return Setting.menu[state.currentTab]["name"]
+        },
         focus: state => {
             return (
                 state.sideNavShow ||
