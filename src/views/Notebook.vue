@@ -94,11 +94,11 @@ export default {
             });
         },
         localGroup : function (routename){
-            let originNav = this.$store.state.navs
-            for (let i=0;i<originNav.length;i++){
-                let _tempNavItem = this.$store.state.navs[i]
-                if(_tempNavItem.name.toLowerCase() == routename){
-                    this.$store.commit('changeGroup',_tempNavItem.group)
+            let navs = this.$store.state.navs
+            for (let i=0;i<navs.length;i++){
+                let _temp = navs[i]
+                if(_temp.name.toLowerCase() == routename){
+                    this.$store.commit('changeGroup',_temp.group)
                     break;
                 }
             }

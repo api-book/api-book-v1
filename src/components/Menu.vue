@@ -15,8 +15,12 @@ export default {
     name: "Menu",
     data : function (){
         return {
-            menu : this.$store.state.menu || [{name:'Home',url:"/"}],
-            activeIndex : 0
+            menu : this.$store.state.menu || [{name:'Home',url:"/"}]
+        }
+    },
+    computed : {
+        activeIndex : function (){
+            return this.$store.state.currentTab
         }
     },
     methods : {
