@@ -1,8 +1,7 @@
 # api-book
 一个简易的纯前端api笔记本，默认使用浏览器IndexedDB作为临时数据库，通过导出为json作为静态存档。  
 可基于vuex接入任何你喜欢的后端服务。  
-【**Demo**】 http://api-book.com/demo —— 可在线随意编辑体验。  
-【**Mine**】 http://iruxu.com/notebook —— 本项目基于此多年前自制的笔记重构。  
+【Demo】 http://iruxu.com/notebook 
 
 ## 安装
 1. 确保你已安装[node.js](https://nodejs.org/en/)
