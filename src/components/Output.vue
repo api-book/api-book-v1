@@ -176,6 +176,11 @@ export default {
         display: none;
     }
 }
+.c-output-desc{
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
 .c-output-reference {
     border: 1px solid #444;
     background-color: #3c3b3b;
