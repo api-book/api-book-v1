@@ -49,7 +49,7 @@ export default {
             return (this.item && this.item.tag) || "";
         },
         suffix: function() {
-            return (this.item && this.item.sufffix) || "";
+            return (this.item && this.item.suffix) || "";
         },
         desc: function() {
             return this.item && this.item.desc
@@ -134,11 +134,6 @@ export default {
         cursor: default;
     }
 
-    .u-prefix,
-    .u-tag,
-    .u-suffix {
-        cursor: text;
-    }
     .u-prefix {
         color: lighten(@blue, 20%);
     }
