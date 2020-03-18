@@ -149,7 +149,7 @@ export default {
         height: 100%;
         float: left;
         display: block;
-        background: url(../../public/img/logo-white.png) no-repeat center center;
+        background: url(../../public/img/logo.svg) no-repeat center center;
         background-size: auto 90%;
         margin-left: 5px;
         margin-right: 8px;

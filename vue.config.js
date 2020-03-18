@@ -3,10 +3,10 @@ const Config = require("./public/config.json");
 
 module.exports = {
     productionSourceMap: false,
-    outputDir: "docs",
+    outputDir: "dist",
     chainWebpack: config => {
         config.plugin("html").tap(args => {
-            args[0].title = Setting.meta.title
+            args[0].title = Setting.meta.title,
             args[0].meta = {
                 'keywords': Setting.meta.keywords,
                 'description': Setting.meta.description
