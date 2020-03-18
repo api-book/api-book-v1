@@ -39,6 +39,6 @@ const converter = new showdown.Converter({
     simpleLineBreaks: true,
     openLinksInNewWindow: true,
     backslashEscapesHTMLTags: true,
-    extensions: ['codehighlight']
+    extensions: ['codehighlight'],
 });
 export default converter;
